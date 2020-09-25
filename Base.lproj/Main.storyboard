@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrumKIT_Masters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-Il-irm">
+                                <rect key="frame" x="-7" y="-85" width="911" height="585"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7A1-z3-TkC">
+                                <rect key="frame" x="167" y="224" width="200" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="L-kick"/>
+                                <connections>
+                                    <action selector="leftBassPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kp1-N0-5TC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzL-bl-zaf">
+                                <rect key="frame" x="425" y="225" width="199" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="R-kick"/>
+                                <connections>
+                                    <action selector="rightBassPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3M9-Kp-Ujo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fa-hL-tHK">
+                                <rect key="frame" x="55" y="180" width="144" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="hihat"/>
+                                <connections>
+                                    <action selector="hihatOpenPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cw3-ba-e93"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNX-oW-adl">
+                                <rect key="frame" x="259" y="141" width="118" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tom1"/>
+                                <connections>
+                                    <action selector="tomOnePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xk2-nm-Z0f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0D-f1-lyK">
+                                <rect key="frame" x="374" y="124" width="128" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tom2"/>
+                                <connections>
+                                    <action selector="tomTwoPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="16c-GL-MKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7E-cU-qSI">
+                                <rect key="frame" x="499" y="125" width="151" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tom3"/>
+                                <connections>
+                                    <action selector="tomThreePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4km-oe-AH1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0b-hy-sbb">
+                                <rect key="frame" x="606" y="213" width="185" height="178"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="floor-tom"/>
+                                <connections>
+                                    <action selector="tomFourPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvl-ot-OLF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgk-cY-Zfo">
+                                <rect key="frame" x="127" y="48" width="151" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="L-Crash"/>
+                                <connections>
+                                    <action selector="leftCrashPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EXY-wT-gLs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CV-22-Yuj">
+                                <rect key="frame" x="275" y="43" width="102" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="splash"/>
+                                <connections>
+                                    <action selector="splashPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iHm-Cf-0tI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7X-Ag-3Wb">
+                                <rect key="frame" x="375" y="12" width="134" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="china"/>
+                                <connections>
+                                    <action selector="chinaPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9n-ci-tcm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEh-SA-8Tf">
+                                <rect key="frame" x="510" y="12" width="148" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="R-Crash"/>
+                                <connections>
+                                    <action selector="rightCrashPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7MA-e3-r4p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbr-r6-WED">
+                                <rect key="frame" x="642" y="57" width="200" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Ride-cymbal"/>
+                                <connections>
+                                    <action selector="ridePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WWV-ho-3NE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKQ-He-jIs">
+                                <rect key="frame" x="319" y="244" width="152" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="snare"/>
+                                <connections>
+                                    <action selector="snarePlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xC-tX-4MX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.58035714285714" y="136.23188405797103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="L-Crash" width="439" height="450"/>
+        <image name="L-kick" width="694" height="668"/>
+        <image name="R-Crash" width="438" height="453"/>
+        <image name="R-kick" width="694" height="668"/>
+        <image name="Ride-cymbal" width="529" height="543"/>
+        <image name="background" width="1242" height="2208"/>
+        <image name="china" width="424" height="435"/>
+        <image name="floor-tom" width="575" height="551"/>
+        <image name="hihat" width="436" height="443"/>
+        <image name="snare" width="509" height="502"/>
+        <image name="splash" width="310" height="321"/>
+        <image name="tom1" width="380" height="367"/>
+        <image name="tom2" width="430" height="416"/>
+        <image name="tom3" width="470" height="456"/>
+    </resources>
+</document>
